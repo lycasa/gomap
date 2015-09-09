@@ -106,6 +106,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		mMapView.onPause();
 	}
 	//test github
+	//test github 2
 	int i = 1;
 	int j = 1;
 	@Override
