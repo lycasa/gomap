@@ -105,7 +105,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		// 在activity执行onPause时执行mMapView. onPause ()，实现地图生命周期管理
 		mMapView.onPause();
 	}
-
+	//test github
 	int i = 1;
 	int j = 1;
 	@Override
