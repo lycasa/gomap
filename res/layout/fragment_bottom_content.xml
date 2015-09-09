@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lyc.gomap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <!-- 附近 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.lyc.gomap.customview.UIButton
+            android:id="@+id/uibutton_around"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:uibuttonleftimage="@drawable/main_icon_nearby"
+            app:uibuttonrighttext="@string/uibutton_nearby" />
+    </LinearLayout>
+    <!-- 路线 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.lyc.gomap.customview.UIButton
+            android:id="@+id/uibutton_route"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:uibuttonleftimage="@drawable/main_icon_route"
+            app:uibuttonrighttext="@string/uibutton_route" />
+    </LinearLayout>
+    <!-- 导航 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.lyc.gomap.customview.UIButton
+            android:id="@+id/uibutton_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:uibuttonleftimage="@drawable/main_icon_nav"
+            app:uibuttonrighttext="@string/uibutton_guide" />
+    </LinearLayout>
+    <!-- 我的 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.lyc.gomap.customview.UIButton
+            android:id="@+id/uibutton_me"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:uibuttonleftimage="@drawable/main_icon_mine"
+            app:uibuttonrighttext="@string/uibutton_me" />
+    </LinearLayout>
+
+</LinearLayout>

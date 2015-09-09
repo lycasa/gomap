@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义控件UIButton的自定义属性 -->
+    <declare-styleable name="UIButton">
+
+        <!-- UIButton控件左侧图片 -->
+        <attr name="uibuttonleftimage" format="reference" />
+        <!-- UIButton控件右侧文本 -->
+        <attr name="uibuttonrighttext" format="reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 地图界面上主布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <!-- 头部的搜索框 -->
+     <fragment  
+        android:id="@+id/fragment_search_title"  
+        android:name="com.lyc.gomap.fragment.TitleFragment"  
+        android:layout_width="fill_parent"  
+        android:layout_margin="10dp"
+        android:layout_height="45dp" /> 
+        
+    <!-- 底部的选择框 -->
+     <fragment  
+        android:id="@+id/fragment_bottom_content"  
+        android:name="com.lyc.gomap.fragment.BottomFragment"  
+        android:layout_width="fill_parent"  
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_height="45dp" />
+     
+     <!-- 路况 -->
+     <ImageButton 
+         android:id="@+id/main_icon_roadcondition_on"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_margin="10dp"
+         android:background="@android:color/background_dark"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/fragment_search_title"
+         android:src="@drawable/main_icon_roadcondition_on"
+         />
+     <!-- 卫星图 -->
+     <ImageButton 
+         android:id="@+id/main_icon_maplayers"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_margin="10dp"
+         android:background="@android:color/background_dark"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/main_icon_roadcondition_on"
+         android:src="@drawable/main_icon_maplayers"
+         />
+     <!-- 普通图 -->
+     <ImageButton 
+         android:id="@+id/notification_icon"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_margin="10dp"
+         android:background="@android:color/background_dark"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/main_icon_maplayers"
+         android:src="@drawable/notification_icon"
+         android:visibility="gone"
+         />
+     <!-- 热力图-->
+     <ImageButton 
+         android:id="@+id/map_layer_hot"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_margin="10dp"
+         android:background="@android:color/background_dark"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/notification_icon"
+         android:src="@drawable/map_layer_hot"
+         />
+          
+
+</RelativeLayout>
